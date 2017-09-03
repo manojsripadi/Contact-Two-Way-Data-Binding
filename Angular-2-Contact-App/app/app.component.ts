@@ -15,6 +15,9 @@ import { Component } from '@angular/core';
         .alignright{
           color: purple
         }
+       #cart{
+          float:right
+        }
        `]
 })
 export class AppComponent {
