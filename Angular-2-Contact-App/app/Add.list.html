@@ -1,7 +1,8 @@
 <div class="container">
   <br/><label>Please Enter Your Name <b>Genius</b>: </label><input type="text" [(ngModel)]="name">
    <h2> Welcome to <img src="https://user-images.githubusercontent.com/1560278/27637937-cb4b9b24-5c11-11e7-949b-15c1e4cdb53c.gif" alt="Smiley face" align="middle" width="200" height="200"> Contact App <b>{{name}}</b></h2>
-    <form #userForm="ngForm" class="form-group" (ngSubmit)="onSubmit(userForm.value.Fname)" (keydown.enter)="$event.preventDefault()" novalidate>
+  <button type="button" id="cart" title="Total number of employees"><img src="https://thumb1.shutterstock.com/display_pic_with_logo/971035/380655559/stock-vector-vector-shopping-cart-icon-380655559.jpg" width="60" height="60">{{totalcount}}</button><br/>  
+  <br/><br/><form #userForm="ngForm" class="form-group" (ngSubmit)="onSubmit(userForm.value.Fname)" (keydown.enter)="$event.preventDefault()" novalidate>
         <div>
             <span class="alignright">Total Number Of Employees:{{totalcount}}</span>
             </div>
